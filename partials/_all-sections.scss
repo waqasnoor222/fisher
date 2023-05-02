@@ -1,0 +1,271 @@
+header {
+    padding: 10px 0;
+    ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 15px 0;
+        li {
+            display: inline;
+            margin-right: 15px;
+            a {
+                font-size: 16px;
+                font-family: $base-font-family;
+                font-weight: 800;
+            }
+        }
+    }
+}
+.home-banner {
+    background-image: url("/images/banner.png");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: inset 0px -520px 2000px 30px #161f28;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        top: 0;
+    }
+    h1 {
+        font-size: 42px;
+        color: white;
+        position: relative;
+        display: table;
+        z-index: 1;
+        font-weight: 300;
+        font-family: $base-font-family;
+        margin-top: 40px;
+    }
+    h2 {
+        font-size: 42px;
+        color: white;
+        position: relative;
+        display: table;
+        z-index: 1;
+        font-family: $base-font-family;
+        font-weight: bold;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid white;
+        position: relative;
+        z-index: 1;
+        margin-top: 50px;
+    }
+    h5 {
+        font-weight: 700;
+        color: white;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 160px;
+    }
+    .about-section {
+        // background: $theme-primary;
+        h1 {
+            font-size: 42px;
+            text-align: center;
+            color: white;
+            font-weight: 300;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 130px;
+                background: #605454;
+                top: -161px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+        p {
+            text-align: center;
+            color: white;
+            width: 51%;
+            margin: auto;
+            position: relative;
+            margin: 20px auto;
+            z-index: 1;
+        }
+    }
+}
+.portfolio {
+    h1 {
+        font-size: 42px;
+        text-align: center;
+        font-weight: 300;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    p {
+        text-align: center;
+    }
+    h6 {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .grid-one {
+        display: table;
+        width: 100%;
+        .grid-item {
+            width: 50%;
+            float: left;
+            background: #f2f2f2;
+            padding: 50px;
+            p {
+                text-align: left;
+            }
+            a {
+                margin-top: 122px;
+                display: block;
+                font-weight: 800;
+            }
+        }
+    }
+}
+.investment-main {
+    h6 {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    img {
+        width: 200px;
+        margin: auto;
+    }
+    a {
+        float: right;
+        margin-right: 30px;
+        margin-top: 13px;
+        font-weight: 600;
+    }
+}
+.making-main {
+    background: #f2f2f2;
+    padding-right: 30px;
+    h1 {
+        font-size: 42px;
+        text-align: center;
+        font-weight: 300;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .first-para {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .grid-two {
+        width: 100%;
+        display: table;
+        .grid-item {
+            width: 50%;
+            float: left;
+            padding: 23px;
+            p {
+                font-weight: 600;
+            }
+            .date {
+                font-weight: normal;
+                margin-top: 106px;
+            }
+        }
+    }
+}
+.experience-main {
+    .experience-colored {
+        background-size: cover;
+        position: relative;
+        padding: 130px 0;
+        margin-top: 80px;
+        h1 {
+            font-size: 42px;
+            text-align: center;
+            font-weight: 300;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            color: white;
+            z-index: 1;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 300px;
+                height: 2px;
+                background: #f7f7f761;
+                bottom: -20px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+        img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid white;
+            position: relative;
+            z-index: 1;
+            margin-top: 50px;
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+            position: relative;
+        }
+        h5 {
+            font-weight: 700;
+            color: white;
+            position: relative;
+            z-index: 1;
+            // margin-bottom: 160px;
+            text-align: center;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            top: 0;
+        }
+    }
+}
+.footer {
+    text-align: center;
+    padding: 80px 0;
+    img {
+        display: block;
+        margin: auto;
+    }
+    p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 15px 0;
+        li {
+            display: inline;
+            margin-right: 15px;
+            a {
+                font-size: 16px;
+                font-family: $base-font-family;
+                font-weight: 800;
+            }
+        }
+    }
+}
